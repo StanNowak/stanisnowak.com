@@ -1,31 +1,59 @@
 <style>
 	h1, p {
-		text-align: left;
 		margin: 0 auto;
+		text-align: justify; 
+		margin-left: 200px
 
 	}
 
 	h1 {
-		font-size: .2em;
 		font-weight: 200;
 		margin: 0 0 0.5em 0;
 	}
 
 	h2 {
 		font-size: 2em;
-		font-weight: 200;
-		
+		font-weight: 600;
 	}
 
+	.image-cropper {
+		width: 225px;
+		height: 225px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 5%;
+		margin-left: 50px;
+		margin-bottom: 30px;
+		float: right;
+		}
 
+	img {
+		display: inline;
+		margin: 0 auto;
+		margin-right: 50px;
+		height: 100%;
+		width: auto;
+	}
 
 	p {
 		margin: 1em auto;
+		font-size: 1em;
 	}
+
+	a {
+		color:#3477ad;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
 
 	@media (min-width: 20px) {
 		h1 {
-			font-size: 4em;
+			font-size: 3em;
+			text-align: justify;
+			
 		}
 	}
 </style>
@@ -33,11 +61,20 @@
 <svelte:head>
 	<title>Stan Nowak</title>
 </svelte:head>
+<div class="image-cropper">
+	<img src="Portrait-2.jpg" alt="Stan Nowak">
+</div>
+	<h1><strong>Stan</strong> Nowak</h1>
 
 
 
-<h1>Stan Nowak</h1>
-<h2></h2>
 
-
-<p>I am a user experience engineer and PhD student studying visual analytics. My research interests include collaborative visual analytics, narrative visualiation, uncertainty visualization, and sensemaking particularly in contexts of risk-based decision-making. I am developing visual analytics technologies that extend the philsophy of literate computing used widely in data science notebook environments to the non-linear analytic workflows of visual analytics systems.  </p>
+<p>I’m a PhD student at the <a href="https://www.sfu.ca/siat.html">School of Interactive Arts and Technology</a> at <a href="https://www.sfu.ca/">Simon Fraser University</a>. I also work at the <a href="http://viva.iat.sfu.ca/">Vancouver Institute for Visual Analytics</a>. I design and build interactive <a href="http://viva.iat.sfu.ca/Projects.html">visualization tools</a> for complex analysis and provide training in visual analytics. I am supervised by <a href="https://www.sfu.ca/~lyn/">Lyn Bartram</a> as well <a href="https://www.avalancheresearch.ca/pascal-haegeli/">Pascal Haegeli</a> and <a href="https://ws.iat.sfu.ca/">Wolfgang Stuerzlinger</a>. </p>
+<br>
+<br>
+<h2>Research</h2>
+<p>I am interested in visual analytics interventions that support sensemaking under ambiguity. I am developing computational and design strategies to address challenges of ambiguous interpretation in time-constrained analyses that lead to critical decision-making.</p>
+<br>
+<h2>Consulting</h2>
+<p> I also wear another hat as a visual analytics consultant and trainer serving clients in healthcare, academic research, manufacturing, retail distribution, public art, and public risk communication among many others. I love learning about the world my clients come from, and I'm equally passionate about discovering the ways that interactive visualizations can give them a fresh perspective on the challenges they face.
+</p>
