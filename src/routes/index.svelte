@@ -69,7 +69,7 @@
 
 
 
-<p>I’m a PhD student at the <a href="https://www.sfu.ca/siat.html">School of Interactive Arts and Technology</a> at <a href="https://www.sfu.ca/">Simon Fraser University</a>. I also work at the <a href="http://viva.iat.sfu.ca/">Vancouver Institute for Visual Analytics</a>. I design and build interactive <a href="http://viva.iat.sfu.ca/Projects.html">visualization tools</a> for complex analysis and provide training in visual analytics. I am supervised by <a href="https://www.sfu.ca/~lyn/">Lyn Bartram</a> as well <a href="https://www.avalancheresearch.ca/pascal-haegeli/">Pascal Haegeli</a> and <a href="https://ws.iat.sfu.ca/">Wolfgang Stuerzlinger</a>. </p>
+<p>I’m a PhD student at the <a href="https://www.sfu.ca/siat.html">School of Interactive Arts and Technology</a> at <a href="https://www.sfu.ca/">Simon Fraser University</a>. I also work at the <a href="http://viva.iat.sfu.ca/">Vancouver Institute for Visual Analytics</a>. I design and build interactive <a href="http://viva.iat.sfu.ca/Projects.html">visualization tools</a> for complex analysis and provide training in visual analytics. I am supervised by <a href="https://www.sfu.ca/~lyn/">Lyn Bartram</a>, <a href="https://www.avalancheresearch.ca/pascal-haegeli/">Pascal Haegeli</a> and <a href="https://ws.iat.sfu.ca/">Wolfgang Stuerzlinger</a>. </p>
 <br>
 <br>
 <h2>Research</h2>
