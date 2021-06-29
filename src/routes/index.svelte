@@ -69,12 +69,12 @@
 
 
 
-<p>I’m a PhD student at the <a href="https://www.sfu.ca/siat.html">School of Interactive Arts and Technology</a> at <a href="https://www.sfu.ca/">Simon Fraser University</a>. I also work at the <a href="http://viva.iat.sfu.ca/">Vancouver Institute for Visual Analytics</a>. I design and build interactive <a href="http://viva.iat.sfu.ca/Projects.html">visualization tools</a> for complex analysis and provide training in visual analytics. I am supervised by <a href="https://www.sfu.ca/~lyn/">Lyn Bartram</a>, <a href="https://www.avalancheresearch.ca/pascal-haegeli/">Pascal Haegeli</a> and <a href="https://ws.iat.sfu.ca/">Wolfgang Stuerzlinger</a>. </p>
+<p>I’m a PhD candidate at the <a href="https://www.sfu.ca/siat.html">School of Interactive Arts and Technology</a> at <a href="https://www.sfu.ca/">Simon Fraser University</a> where I also work at the <a href="http://viva.iat.sfu.ca/">Vancouver Institute for Visual Analytics</a>. I design and build interactive visualization tools for complex analysis and provide training in visual analytics. My supervisory committee includes <a href="https://www.sfu.ca/~lyn/">Lyn Bartram</a>, <a href="https://www.avalancheresearch.ca/pascal-haegeli/">Pascal Haegeli</a> and <a href="https://ws.iat.sfu.ca/">Wolfgang Stuerzlinger</a>. </p>
 <br>
 <br>
 <h2>Research</h2>
-<p>I am interested in visual analytics interventions that support sensemaking under ambiguity. I am developing computational and design strategies to address challenges of ambiguous interpretation in time-constrained analyses that lead to critical decision-making.</p>
+<p>I am interested in using visual analytics to address ambiguity, situations where multiple interpretations are plausible, in collaborative sensemaking. I am developing computational and visualization design strategies to address challenges of ambiguous interpretation in time-constrained analyses that lead to critical decision-making. </p>
 <br>
 <h2>Consulting</h2>
-<p> I also wear another hat as a visual analytics consultant and trainer serving clients in healthcare, academic research, manufacturing, retail distribution, public art, and public risk communication among many others. I love learning about the world my clients come from, and I'm equally passionate about discovering the ways that interactive visualizations can give them a fresh perspective on the challenges they face.
+<p> I also wear another hat as a visual analytics practitioner and educator serving clients across a variety of disciplines such as healthcare, academic research, manufacturing, retail distribution, public art, and public risk communication among others. I love learning about the world my clients work in, and I'm equally passionate about discovering the ways that interactive visualizations can give them a fresh perspective on the challenges they face.
 </p>
