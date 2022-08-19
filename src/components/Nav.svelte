@@ -58,7 +58,7 @@
 </style>
 
 <nav>
-	<ul style="font-family: Lato">
+	<ul style="font-family: sans-serif">
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
 		<li><a rel=prefetch aria-current="{segment === 'cv' ? 'page' : undefined}" href="cv">CV</a></li>
 		
