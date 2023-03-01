@@ -18,7 +18,7 @@
 
 	.image-cropper {
 		width: 260px;
-		height: 204px;
+/* 		height: 204px; */
 		position: relative;
 		overflow: hidden;
 		border-radius: 5%;
