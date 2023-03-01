@@ -62,7 +62,7 @@
 	<title>Stan Nowak</title>
 </svelte:head>
 <div class="image-cropper">
-	<img src="Portrait.jpg" alt="Stan Nowak">
+	<img src="Portrait.jpeg" alt="Stan Nowak">
 </div>
 	<h1><strong>Stan</strong> Nowak</h1>
 
