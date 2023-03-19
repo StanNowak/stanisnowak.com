@@ -14,7 +14,7 @@
   }
 
   body {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
