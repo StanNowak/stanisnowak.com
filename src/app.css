@@ -1,0 +1,15 @@
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #E1E1E1;
+  background-color: #121212;
+}
+
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --primary-color: #ff9800;
+    --menu-color: #333333;
+    --link-hover-color: #ffa726;
+  }

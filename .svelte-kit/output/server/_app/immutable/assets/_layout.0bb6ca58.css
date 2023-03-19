@@ -1,0 +1,15 @@
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #E1E1E1;
+  background-color: #121212;
+}
+
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --primary-color: #ff9800;
+    --menu-color: #333333;
+    --link-hover-color: #ffa726;
+  }:root{--bg-color:#1a1a1a;--text-color:#f5f5f5;--primary-color:#ff9800;--menu-color:#333333;--link-hover-color:#ffa726}.navbar.svelte-jx2eea{display:flex;justify-content:space-between;font-weight:600;font-size:21px;align-items:center;background-color:var(--menu-color);padding:15px 25px}.logo-link.svelte-jx2eea,.menu-link.svelte-jx2eea{color:var(--text-color);text-decoration:none;margin-right:15px}.logo-link.svelte-jx2eea:hover,.menu-link.svelte-jx2eea:hover{color:var(--link-hover-color)}.menu.svelte-jx2eea{display:flex}

@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "thumbnail": "https://via.placeholder.com/200",
+      "title": "Paper Title 1",
+      "coauthors": ["Author 1", "Author 2", "Author 3"],
+      "venue": "Conference Name 1",
+      "paperLink": "https://example.com/paper1.pdf",
+      "demoLink": "https://example.com/demo1",
+      "videoLink": "https://example.com/video1"
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://via.placeholder.com/200",
+      "title": "Paper Title 2",
+      "coauthors": ["Author 1", "Author 2", "Author 3"],
+      "venue": "Conference Name 2",
+      "paperLink": "https://example.com/paper2.pdf"
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://via.placeholder.com/200",
+      "title": "Paper Title 3",
+      "coauthors": ["Author 1", "Author 2", "Author 3"],
+      "venue": "Conference Name 3",
+      "paperLink": "https://example.com/paper3.pdf",
+      "videoLink": "https://example.com/video3"
+    }
+  ]
+  
