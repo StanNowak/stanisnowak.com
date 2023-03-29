@@ -71,7 +71,7 @@
     </p>
     <h2>Consulting</h2>
     <p>
-        I am also a visual analytics practitioner and educator, serving clients across a variety of domains such as healthcare, academic research, manufacturing, retail distribution, public art, and public risk communication. I love learning about the unique worlds my clients inahbit, and I'm equally passionate about discovering the ways that interactive visualizations can give them a fresh perspective on the challenges they face.
+        I am also a visual analytics practitioner and educator, serving clients across a variety of domains such as healthcare, academic research, manufacturing, retail distribution, public art, and public risk communication. I love learning about the unique worlds my clients inhabit, and I'm equally passionate about discovering the ways that interactive visualizations can give them a fresh perspective on the challenges they face.
     </p>
     <br>
     <h3><a href={pdfUrl} >Download my CV</a></h3><small>last updated February 2023</small>
