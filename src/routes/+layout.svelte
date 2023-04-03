@@ -12,7 +12,11 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-9MEDMN3QKR');
+    gtag('config', 'G-9MEDMN3QKR', {
+  'page_title': document.title,
+  'page_path': window.location.pathname + window.location.search
+});
+
   </script>
 </svelte:head>
 
