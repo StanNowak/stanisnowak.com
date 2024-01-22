@@ -65,7 +65,7 @@
         type: 'Journal',
         link: 'https://osf.io/y35u4/',
         thumbnail: '/Thumbnails/Viz23.png',
-        video: null
+        video: 'https://www.youtube.com/watch?v=SBB4WR305xk&ab_channel=IEEEVisualizationConference'
     },
 	    {
         id: 1,
