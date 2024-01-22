@@ -158,7 +158,7 @@
 			<div class="publication-venue">{publication.venue}</div>
 			{#if publication.video}
 				<div class="publication-video">
-					Video: <a href={publication.video} target="_blank">{publication.video}</a>
+					<a href={publication.video} target="_blank">video</a>
 				</div>
 			{/if}
 		</div>
