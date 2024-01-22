@@ -2,7 +2,7 @@
     import { onMount, onDestroy } from 'svelte';
   
     let container;
-    const pdfUrl = '/StanNowakCV2023.pdf';
+    const pdfUrl = '/StanNowakCV.pdf';
     let resizeTimeout;
   
     async function renderPdf(pdf, scale) {

@@ -1,7 +1,7 @@
 <!-- src/routes/index.svelte -->
 <script>
     let headshot = "/Portrait.jpeg";
-    const pdfUrl = '/StanNowakCV2023.pdf';
+    const pdfUrl = '/StanNowakCV.pdf';
   </script>
   
   <style>
@@ -56,24 +56,14 @@
       <img src="{headshot}" alt="Your Name" class="headshot" />
     </div>
     <p>
-      I’m a PhD candidate at the
-      <a href="https://www.sfu.ca/siat.html">School of Interactive Arts and Technology</a>
-      at <a href="https://www.sfu.ca/">Simon Fraser University</a> where I also work at the
-      <a href="http://viva.sfu.ca/">Vancouver Institute for Visual Analytics</a>. I design and build interactive data interfaces and provide training in visual analytics. My supervisory committee includes
-      <a href="https://www.sfu.ca/~lyn/">Lyn Bartram</a>,
-      <a href="https://www.avalancheresearch.ca/pascal-haegeli/">Pascal Haegeli</a>, and
-      <a href="https://ws.iat.sfu.ca/">Wolfgang Stuerzlinger</a>.
+      I’m a Visualization Designer & Researcher at
+      <a href="https://avalanche.ca/about/avcan-staff">Avalanche Canada</a>. My role involves designing visual analytics and other software systems used for avalanche safety by both professionals and the public. I thrive at the intersection of product design and applied research, creating solutions inspired by and evaluated through real-world challenges.
     </p>
     <h2>Research</h2>
     <p>
-      I am interested in problem-driven and applied visualization research. My research focuses on the use of visual analytics in risk assessment in complex systems. I am particularly interested in the use of visual analytics to better support human data interaction (HDI), knowledge elicitation, complex and ambiguous sensemaking, and decision-making in time-constrained collaborative applications. 
-      
-    </p>
-    <h2>Consulting</h2>
-    <p>
-        I am also a visual analytics practitioner and educator, serving clients across a variety of domains such as healthcare, academic research, manufacturing, retail distribution, public art, and public risk communication. I love learning about the unique worlds my clients inhabit, and I'm equally passionate about discovering the ways that interactive visualizations can give them a fresh perspective on the challenges they face.
+      I am interested in visual analytics for risk assessment in complex systems, particularly emphasizing enhancement of human data interaction, knowledge elcititation, sensemaking, and decision-making in critical, collaborative environments. Currently, I am exploring interactive knowledge management systems to better support collaborative sensemaking.
     </p>
     <br>
-    <h3><a href={pdfUrl} >Download my CV</a></h3><small>last updated February 2023</small>
+    <h3><a href={pdfUrl} >Download my CV</a></h3><small>last updated January 2024</small>
   </div>
-  
+
