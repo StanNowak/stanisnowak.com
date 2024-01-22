@@ -5,7 +5,7 @@
         id: 10,
         title: 'Designing for ambiguity in sensemaking: Visual analytics in risk analysis and prediction',
         authors: ['Stan Nowak'],
-        venue: 'Ph.D. thesis, Simon Fraser University',
+        venue: 'Ph.D. thesis, Simon Fraser University 2023',
         date: '2023',
         type: 'Thesis',
         link: 'https://summit.sfu.ca/_flysystem/fedora/2023-11/etd22736.pdf',
@@ -16,7 +16,7 @@
         id: 9,
         title: 'Identifying Visualization Opportunities to Help Architects Manage the Complexity of Building Codes',
         authors: ['Stan Nowak', 'Bon Adriel Aseniero', 'Lyn Bartram', 'Tovi Grossman', 'George Fitzmaurice', 'Justin Matejka'],
-        venue: 'IEEE Computer Graphics & Applications',
+        venue: 'IEEE Computer Graphics & Applications 2023',
         date: '2023',
         type: 'Journal',
         link: 'https://www.research.autodesk.com/app/uploads/2023/10/Identifying_Visualization_Opportunities_to_Help_Architects_Manage_the_Complexity_of_Building_Codes.pdf',
@@ -27,11 +27,22 @@
         id: 8,
         title: 'Designing for Ambiguity in Visual Analytics: Lessons from Risk Assessment and Prediction',
         authors: ['Stan Nowak', 'Lyn Bartram'],
-        venue: 'IEEE Transactions on Visualization and Computer Graphics',
+        venue: 'IEEE Transactions on Visualization and Computer Graphics 2023',
         date: '2023',
         type: 'Journal',
         link: 'https://osf.io/y35u4/',
         thumbnail: '',
+        video: null
+    },
+	    {
+        id: 1,
+        title: 'I’m Not Sure: Designing for Ambiguity in Visual Analytics',
+        authors: ['Stan Nowak', 'Lyn Bartram'],
+        venue: 'Graphics Interface 2022',
+        date: '2022',
+        type: 'Archival Conference Proceedings (refereed)',
+        link: 'https://openreview.net/pdf?id=SHQU_yejZFv',
+        thumbnail: '/Thumbnails/GI22.png',
         video: null
     },
     {
@@ -53,7 +64,7 @@
         date: '2021',
         type: 'Journal',
         link: 'https://www.frontiersin.org/articles/10.3389/froh.2021.703874/full',
-        thumbnail: '',
+        thumbnail: '/Thumbnails/Frontier21.jpeg',
         video: null
     },
     {
@@ -64,7 +75,7 @@
         date: '2020',
         type: 'Archival Conference Proceedings (refereed)',
         link: 'https://arxiv.org/abs/2009.02800',
-        thumbnail: '',
+        thumbnail: '/Thumbnails/VizShort20.png',
         video: null
     },
     {
@@ -75,7 +86,7 @@
         date: '2019',
         type: 'Journal',
         link: 'https://nhess.copernicus.org/articles/20/1557/2020/',
-        thumbnail: '',
+        thumbnail: '/Thumbnails/NHESS20.png',
         video: null
     },
     {
@@ -86,7 +97,7 @@
         date: '2018',
         type: 'Archival Conference Proceedings (refereed)',
         link: 'https://osf.io/ws7j9/',
-        thumbnail: '',
+        thumbnail: '/Thumbnails/BELIV18.png',
         video: null
     },
     {
@@ -97,18 +108,7 @@
         date: '2018',
         type: 'Archival Conference Proceedings (refereed)',
         link: 'http://www.avalancheresearch.ca/wp-content/uploads/2018/08/2018_ISSW_Horton_SnowpackPatterns.pdf',
-        thumbnail: '',
-        video: null
-    },
-    {
-        id: 1,
-        title: 'I’m Not Sure: Designing for Ambiguity in Visual Analytics',
-        authors: ['Stan Nowak', 'Lyn Bartram'],
-        venue: 'Graphics Interface 2022',
-        date: '2022',
-        type: 'Archival Conference Proceedings (refereed)',
-        link: 'https://openreview.net/pdf?id=SHQU_yejZFv',
-        thumbnail: '',
+        thumbnail: '/Thumbnails/ISSW18.png',
         video: null
     }
 ];
