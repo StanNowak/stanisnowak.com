@@ -3,35 +3,35 @@
 	const publications = [
 		{
         id: 13,
-        title: 'THE AVID PROJECT: COLLABORATIVE SOLUTIONS TO AVALANCHE FORECASTING CHALLENGES',
+        title: 'The AvID Project: Collaborative Solutions to Avalanche Forecasting Challenges',
         authors: ['Grant Helgeson', 'Stan Nowak', 'Mike Cooperstein', 'Simon Horton', 'Jacob Barney', 'Brian Lazar', 'Ethan Greene', 'Karl Klassen'],
-        venue: 'Proceedings of the 2023 International Snow Science Workshop in Bend, Oregon',
+        venue: 'International Snow Science Workshop Proceedings 2023',
         date: '2023',
         type: 'Conference Proceedings',
         link: 'https://arc.lib.montana.edu/snow-science/objects/ISSW2023_O1.02.pdf',
-        thumbnail: '/Thumbnails/ISSW23.png',
+        thumbnail: '/Thumbnails/ISSW23avid.png',
         video: null
     },
     {
         id: 12,
         title: 'Is it a problem? Takeaways from research into the use an effectiveness of avalanche problems',
         authors: ['Simon Horton', 'Pascal Haegeli', 'Grant Statham', 'Bret Shandro', 'Taylor Clark', 'Stan Nowak', 'Moses Towell', 'Heather Hordowick', 'Florian Herla'],
-        venue: 'Proceedings of the 2023 International Snow Science Workshop in Bend, Oregon',
+        venue: 'International Snow Science Workshop Proceedings 2023',
         date: '2023',
         type: 'Conference Proceedings',
         link: 'https://avalancheresearch.ca/wp-content/uploads/2023/09/2023_HortonOthers_AvalancheProblems.pdf',
-        thumbnail: '/Thumbnails/ISSW23.png',
+        thumbnail: '/Thumbnails/ISSW23problem.png',
         video: null
     },
     {
         id: 11,
         title: 'Designing digital tools to support handoff at shift changes in avalanche forecasting',
         authors: ['Stan Nowak', 'Pascal Haegeli', 'Lyn Bartram'],
-        venue: 'Proceedings of the 2023 International Snow Science Workshop in Bend, Oregon',
+        venue: 'International Snow Science Workshop Proceedings 2023',
         date: '2023',
         type: 'Conference Proceedings',
         link: 'https://avalancheresearch.ca/wp-content/uploads/2023/09/2023_NowakOthers_HandOff.pdf',
-        thumbnail: '/Thumbnails/ISSW23.png',
+        thumbnail: '/Thumbnails/ISSW23handoff.png',
         video: null
     },
     {
