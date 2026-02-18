@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"pdfjs-dist": "^3.4.120"
+		"pdfjs-dist": "^3.4.120",
+		"puppeteer": "^24.37.4"
 	}
 }

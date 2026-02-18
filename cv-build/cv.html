@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Stan Nowak — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: letter;
+    margin: 0.7in 0.75in;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1A1816;
+    --muted: #524F4A;
+    --accent: #B22222;
+    --line: #D1CDC2;
+    --canvas: #ffffff;
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-size: 9.5pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--muted);
+    background: var(--canvas);
+  }
+
+  /* --- Header --- */
+
+  .header {
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+
+  .header h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 0.1rem;
+  }
+
+  .header .subtitle {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 0.35rem;
+  }
+
+  .header .contact {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.01em;
+  }
+
+  .header .contact a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .header .contact .sep {
+    opacity: 0.35;
+    margin: 0 0.3em;
+  }
+
+  /* --- Summary --- */
+
+  .summary {
+    margin: 0.6rem 0 0.15rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+
+  .interests {
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .interests strong {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  /* --- Sections --- */
+
+  .section {
+    margin-top: 0.65rem;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.15rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* --- Experience entries --- */
+
+  .entry {
+    margin-bottom: 0.5rem;
+    page-break-inside: avoid;
+  }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.05rem;
+  }
+
+  .entry-title {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  .entry-date {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }
+
+  .entry-sub {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.15rem;
+  }
+
+  .entry-sub em {
+    font-style: italic;
+  }
+
+  .supervision {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 0.15rem;
+  }
+
+  .supervision span {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-right: 0.3em;
+  }
+
+  .entry p, .entry-desc {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .entry ul {
+    margin: 0.15rem 0 0 1.1rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .entry ul li {
+    margin-bottom: 0.15rem;
+  }
+
+  .entry ul li strong {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  /* --- Compact entries --- */
+
+  .compact .entry {
+    margin-bottom: 0.25rem;
+  }
+
+  .compact .entry-header {
+    margin-bottom: 0;
+  }
+
+  .compact .entry-title {
+    font-size: 0.92rem;
+  }
+
+  /* --- Earlier roles --- */
+
+  .earlier-role {
+    margin-bottom: 0.2rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .earlier-role strong {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .earlier-role .er-date {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+
+  /* --- Publications --- */
+
+  .pub-group {
+    margin-bottom: 0.4rem;
+  }
+
+  .pub-group-title {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+
+  .pub {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0.2rem;
+    padding-left: 0.5rem;
+  }
+
+  .pub .pub-authors {
+    color: var(--muted);
+  }
+
+  .pub .pub-me {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .pub .pub-venue {
+    font-style: italic;
+  }
+
+  /* --- Service --- */
+
+  .service-line {
+    font-size: 0.88rem;
+  }
+
+  /* --- Talks --- */
+
+  .talk {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.85rem;
+    margin-bottom: 0.12rem;
+    gap: 1rem;
+  }
+
+  .talk-title {
+    color: var(--ink);
+    flex: 1;
+  }
+
+  .talk-venue {
+    color: var(--muted);
+  }
+
+  .talk-date {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+
+  /* --- Awards --- */
+
+  .award {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.85rem;
+    margin-bottom: 0.08rem;
+  }
+
+  .award-name {
+    color: var(--ink);
+    font-weight: 400;
+  }
+
+  .award-right {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  /* --- Teaching --- */
+
+  .teaching-item {
+    font-size: 0.85rem;
+    margin-bottom: 0.12rem;
+    line-height: 1.45;
+  }
+
+  .teaching-item strong {
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .teaching-item .t-date {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+
+  /* --- Skills --- */
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.15rem 0.75rem;
+    font-size: 0.88rem;
+  }
+
+  .skills-label {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 0.78rem;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+
+  .skills-value {
+    color: var(--muted);
+  }
+
+  /* --- Utility --- */
+
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>Stan Nowak, PhD</h1>
+  <div class="subtitle">Principal Designer &amp; Researcher</div>
+  <div class="contact">
+    <a href="mailto:snowak@avalanche.ca">snowak@avalanche.ca</a>
+    <span class="sep">&middot;</span>
+    778-989-1537
+    <span class="sep">&middot;</span>
+    <a href="https://stannowak.info">stannowak.info</a>
+  </div>
+</div>
+
+<!-- SUMMARY -->
+<div class="summary">
+  I design, build, and evaluate interactive visualization systems that support complex
+  decision-making under uncertainty. My work bridges applied research and production
+  software&hairsp;&mdash;&hairsp;currently focused on avalanche safety tools used by forecasting
+  agencies across Canada and the United States.
+  <div class="interests">
+    <strong>Research Interests:</strong>
+    Visual Analytics, Sensemaking, Human-Computer Interaction, Information Visualization, Decision Support Systems
+  </div>
+</div>
+
+<!-- EDUCATION -->
+<div class="section">
+  <div class="section-title">Education</div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-title">PhD &mdash; Simon Fraser University</div>
+      <div class="entry-date">2017&ndash;2023</div>
+    </div>
+    <div class="supervision"><span>Supervision:</span> Lyn Bartram, Pascal Haegeli, Wolfgang Stuerzlinger</div>
+    <div class="entry-desc"><em>Thesis: Visual Analytics to Support Complex Sensemaking under Ambiguity</em></div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-title">BA, Cognitive Systems: Cognition and the Brain &mdash; University of British Columbia</div>
+      <div class="entry-date">2009&ndash;2014</div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section">
+  <div class="section-title">Experience</div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-title">Principal Designer &amp; Researcher &mdash; Avalanche Canada</div>
+      <div class="entry-date">2023&ndash;present</div>
+    </div>
+    <div class="entry-sub">Remote / Revelstoke, Canada</div>
+    <p>Lead designer and researcher for digital products serving 140,000+ public users and 60+ professional forecasters across Avalanche Canada, the Colorado Avalanche Information Center (CAIC), and Parks Canada.</p>
+    <ul>
+      <li>Shipped <strong>AvIDdx</strong>, the primary analysis tool used by avalanche forecasters in Canada and Colorado. Brings together weather, field observations, snowpack models, and satellite data into a single interactive workspace&hairsp;&mdash;&hairsp;replacing workflows that previously relied on experience and intuition alone.</li>
+      <li>Shipped <strong>AvObs</strong>, a tool for analyzing avalanche observation reports from the field. Originated as PhD research and now runs in production&hairsp;&mdash;&hairsp;used daily by forecasters to assess where and how the snowpack is failing.</li>
+      <li>Designed and built <strong>WxObs</strong>, a weather monitoring tool that pulls from hundreds of sources&hairsp;&mdash;&hairsp;weather stations, snow pillows, ski resorts, snow study plots&hairsp;&mdash;&hairsp;and computes summaries forecasters actually need. Includes a quality control system where senior staff flag or correct bad data in real time, something most weather tools don't support at this time scale.</li>
+      <li>Redesigned key parts of the Avalanche Canada public website: a clearer danger rating legend, colorblind-safe colors, and a new basemap built around how backcountry users think about terrain&hairsp;&mdash;&hairsp;showing peaks, trailheads, and landmarks, with satellite imagery at close zoom for route-finding.</li>
+      <li>Built a <strong>place search system</strong> with a ranking algorithm that learns from usage patterns and weighs location type, popularity, and proximity to return the most useful results first.</li>
+      <li>Created a <strong>user research panel</strong>&hairsp;&mdash;&hairsp;an opt-in registry of backcountry users profiled by experience level, activity type, and region, linked to website analytics. Gives us a standing pool of participants for studies and a way to connect what people say with what they actually do on the site.</li>
+      <li>Designed the <strong>CAIC highway forecast email</strong>&hairsp;&mdash;&hairsp;a daily briefing delivered to snow plow crews in Colorado and Alaska. Deliberately low-tech and robust for field conditions.</li>
+      <li>Initiated a partnership with <strong>Statistics Canada</strong> to add a question about backcountry winter recreation to a national survey (running now, results expected early 2027). For the first time, Canada will have a reliable estimate of how many people are exposed to avalanche risk&hairsp;&mdash;&hairsp;data the organization needs to secure federal funding.</li>
+      <li>Leading design strategy for the next generation of avalanche forecasting tools&hairsp;&mdash;&hairsp;moving from hand-drawn regional forecasts toward model-driven, location-specific hazard information. Designing a new app with CAIC (beta March 2026)&hairsp;&mdash;&hairsp;the first product in the avalanche industry to launch through a structured beta program.</li>
+      <li>Mentoring a junior designer and coaching management on design practice. Embedded in the dev team&hairsp;&mdash;&hairsp;write code, review pull requests, and build working prototypes that get handed off to production. Partner with the research officer on snowpack modeling and user research strategy.</li>
+      <li>Driving a culture of user-centered thinking across the organization through reading groups, workshops, and cross-team collaboration. Produce graphics and data analyses for government relations, public communications, and social media.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-title">Graduate Research Assistant &mdash; Vancouver Institute for Visual Analytics</div>
+      <div class="entry-date">2017&ndash;2023</div>
+    </div>
+    <div class="entry-sub">Burnaby, Canada</div>
+    <div class="supervision"><span>Supervision:</span> Lyn Bartram</div>
+    <p>Designed and developed interactive visualizations for clients including Avalanche Canada, BC Cancer Research Centre, and SFU departments. Developed and delivered courses on visualization. (D3.js, Tableau, Python)</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-title">PhD Research Intern &mdash; Autodesk</div>
+      <div class="entry-date">2022</div>
+    </div>
+    <div class="entry-sub">Toronto, Canada</div>
+    <div class="supervision"><span>Supervision:</span> Justin Matejka, Bon Adriel Aseniero, Tovi Grossman, Lyn Bartram, George Fitzmaurice</div>
+    <p>Explored the intersection of visual analytics and architectural CAD through three participatory design studies with professional architects investigating how interactive visualizations could integrate building codes into the design process.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-title">Graduate Research Assistant &mdash; SFU Avalanche Research Program</div>
+      <div class="entry-date">2019&ndash;2020</div>
+    </div>
+    <div class="entry-sub">Burnaby, Canada</div>
+    <div class="supervision"><span>Supervision:</span> Pascal Haegeli &amp; Lyn Bartram</div>
+    <p>Conducted human-centered research with public avalanche forecasters to inform the design of visual analytics tools. Developed visualization prototypes for exploratory analysis of physical snowpack models. (D3.js, Tableau, Svelte)</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-title">Visualization Consulting &mdash; Self-employed</div>
+      <div class="entry-date">2016&ndash;2017</div>
+    </div>
+    <div class="entry-sub">Vancouver, Canada</div>
+    <p>Analytics and visualization for clients in business intelligence, data journalism, and retail supply chain. (D3.js, Tableau, Python)</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-title">Visualization Instructor &amp; Consultant &mdash; Vancouver Institute for Visual Analytics</div>
+      <div class="entry-date">2015&ndash;2017</div>
+    </div>
+    <div class="entry-sub">Burnaby, Canada</div>
+    <p>Visual analytics training for academics and professionals; analytics consulting for industry clients. (D3.js, Tableau, Python)</p>
+  </div>
+
+  <div class="entry" style="margin-top: 0.35rem;">
+    <div class="pub-group-title" style="margin-bottom: 0.2rem;">Earlier Roles</div>
+    <div class="earlier-role"><strong>Cofounder</strong> &mdash; BuckMeUp.com <span class="er-date">2014&ndash;2017</span>. Designed and developed front-end of a freelance marketplace. (AngularJS)</div>
+    <div class="earlier-role"><strong>Research Assistant</strong> &mdash; UBC Communication Dynamics Lab <span class="er-date">2014&ndash;2016</span>. Developed software for audiovisual perception experiments. Supervision: Eric Vatikiotis-Bateson. (Python, Blender)</div>
+    <div class="earlier-role"><strong>Research Assistant</strong> &mdash; UBC Visual Cognition Lab <span class="er-date">2013&ndash;2014</span>. Developed software for experiments on stress and visual cognition; investigated neurofeedback-training effects on performance. Supervision: Ron Rensink. (Matlab, Python)</div>
+    <div class="earlier-role"><strong>Directed Studies</strong> &mdash; UBC Communication Dynamics Lab <span class="er-date">2012</span>. Investigated non-invasive motion-detection from 2D video for monitoring children with sleep disorders. Supervision: Eric Vatikiotis-Bateson &amp; Osman Ipsiroglu. (Matlab)</div>
+  </div>
+</div>
+
+<!-- PUBLICATIONS -->
+<div class="section">
+  <div class="section-title">Publications</div>
+
+  <div class="pub-group">
+    <div class="pub-group-title">Thesis</div>
+    <div class="pub"><span class="pub-me">Stan Nowak</span> (2023). Designing for ambiguity in sensemaking: Visual analytics in risk analysis and prediction. <span class="pub-venue">Ph.D. thesis, Simon Fraser University.</span></div>
+  </div>
+
+  <div class="pub-group">
+    <div class="pub-group-title">Journal Articles</div>
+    <div class="pub"><span class="pub-me">Stan Nowak</span> &amp; Lyn Bartram (2023). Designing for Ambiguity in Visual Analytics: Lessons from Risk Assessment and Prediction. <span class="pub-venue">IEEE Transactions on Visualization and Computer Graphics.</span></div>
+    <div class="pub"><span class="pub-me">Stan Nowak</span>, Bon Adriel Aseniero, Lyn Bartram, Tovi Grossman, George Fitzmaurice, Justin Matejka (2023). Identifying Visualization Opportunities to Help Architects Manage the Complexity of Building Codes. <span class="pub-venue">IEEE Computer Graphics &amp; Applications.</span></div>
+    <div class="pub"><span class="pub-me">Stan Nowak</span>, Miriam Rosing, Wolfgang Stuerzlinger, &amp; Lyn Bartram (2021). Integrating Clinical Knowledge in the Analysis of Natural Histories of Oral Cancer through Visual Analytics. <span class="pub-venue">Frontiers in Oral Health.</span></div>
+    <div class="pub">Simon Horton, <span class="pub-me">Stan Nowak</span>, &amp; Pascal Haegeli (2019). Enhancing the operational value of snowpack models with visualization design principles. <span class="pub-venue">Natural Hazards and Earth System Sciences.</span></div>
+    <div class="pub">Robert A. Fuhrman, <span class="pub-me">Stan Nowak</span>, &amp; Eric Vatikiotis-Bateson (2016). Evaluating how fine-grained changes in the spatial and temporal properties of audiovisual speech influence the perception of linguistic meter. <span class="pub-venue">The Journal of the Acoustical Society of America.</span></div>
+  </div>
+
+  <div class="pub-group">
+    <div class="pub-group-title">Conference Proceedings (Refereed)</div>
+    <div class="pub">Grant Helgeson, <span class="pub-me">Stan Nowak</span>, et al. (2023). The AvID Project: Collaborative Solutions to Avalanche Forecasting Challenges. <span class="pub-venue">ISSW 2023.</span></div>
+    <div class="pub">Simon Horton, Pascal Haegeli, ..., <span class="pub-me">Stan Nowak</span>, et al. (2023). Is it a problem? Takeaways from research into the use and effectiveness of avalanche problems. <span class="pub-venue">ISSW 2023.</span></div>
+    <div class="pub"><span class="pub-me">Stan Nowak</span>, Pascal Haegeli, &amp; Lyn Bartram (2023). Designing digital tools to support handoff at shift changes in avalanche forecasting. <span class="pub-venue">ISSW 2023.</span></div>
+    <div class="pub"><span class="pub-me">Stan Nowak</span> &amp; Lyn Bartram (2022). I'm Not Sure: Designing for Ambiguity in Visual Analytics. <span class="pub-venue">Graphics Interface.</span></div>
+    <div class="pub"><span class="pub-me">Stan Nowak</span>, Lyn Bartram, &amp; Pascal Haegeli (2020). Designing for Ambiguity: Visual Analytics in Avalanche Forecasting. <span class="pub-venue">IEEE Visualization Conference.</span></div>
+    <div class="pub"><span class="pub-me">Stan Nowak</span>, Lyn Bartram, &amp; Thecla Schiphorst (2018). A Micro-Phenomenological Lens for Evaluating Narrative Visualization. <span class="pub-venue">IEEE BELIV.</span></div>
+    <div class="pub">Simon Horton, <span class="pub-me">Stan Nowak</span>, &amp; Pascal Haegeli (2018). Exploring regional snowpack patterns with gridded models. <span class="pub-venue">ISSW 2018.</span></div>
+  </div>
+
+  <div class="pub-group">
+    <div class="pub-group-title">Workshop Papers</div>
+    <div class="pub"><span class="pub-me">Stan Nowak</span> &amp; Lyn Bartram (2022). Give Me the Data: Visual Analytics Needs to Go Beyond Visualization. <span class="pub-venue">ASCR Workshop on Visualization for Scientific Discovery, Decision-Making, &amp; Communication.</span></div>
+  </div>
+</div>
+
+<!-- SERVICE -->
+<div class="section">
+  <div class="section-title">Professional Service</div>
+  <p class="service-line"><strong style="font-weight: 500; color: var(--ink);">Reviewer:</strong> CHI (2025), IEEE VIS (2025), PacificVis (2026), Graphics Interface, EuroVis</p>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+  <div class="section-title">Skills</div>
+  <div class="skills-grid">
+    <div class="skills-label">Design &amp; Research</div>
+    <div class="skills-value">User research, participatory design, usability testing, prototyping, information design, cartographic design, data visualization</div>
+    <div class="skills-label">Development</div>
+    <div class="skills-value">JavaScript, Svelte, React, D3.js, MapboxGL, WebGL, Python, SQL, HTML/CSS</div>
+    <div class="skills-label">Tools</div>
+    <div class="skills-value">Figma, Tableau, Mixpanel, Git</div>
+  </div>
+</div>
+
+<!-- TALKS -->
+<div class="section">
+  <div class="section-title">Talks</div>
+  <div class="talk">
+    <div class="talk-title">Interactive Visualizations for Avalanche Hazard Assessment <span class="talk-venue">&mdash; Canadian Avalanche Association Spring Meeting</span></div>
+    <div class="talk-date">2021</div>
+  </div>
+  <div class="talk">
+    <div class="talk-title">Designing for Ambiguity: Visual Analytics in Avalanche Forecasting <span class="talk-venue">&mdash; IEEE Visualization Conference</span></div>
+    <div class="talk-date">2020</div>
+  </div>
+  <div class="talk">
+    <div class="talk-title">Visual Analytics in Avalanche Forecasting <span class="talk-venue">&mdash; Western Innovation Forum, Burnaby</span></div>
+    <div class="talk-date">2020</div>
+  </div>
+  <div class="talk">
+    <div class="talk-title">Visualization Design, Analysis, and Visual Thinking <span class="talk-venue">&mdash; SFU SciProg Workshop</span></div>
+    <div class="talk-date">2020</div>
+  </div>
+  <div class="talk">
+    <div class="talk-title">Designing Visualization Tools for Avalanche Forecasters <span class="talk-venue">&mdash; CAA Spring Meeting, Penticton</span></div>
+    <div class="talk-date">2019</div>
+  </div>
+  <div class="talk">
+    <div class="talk-title">Principles of Data Visualization and Interpretation <span class="talk-venue">&mdash; SFU SciProg Workshop</span></div>
+    <div class="talk-date">2019</div>
+  </div>
+  <div class="talk">
+    <div class="talk-title">Data Visualization: A Brief Introduction <span class="talk-venue">&mdash; UBC Cognitive Systems Guest Lecture</span></div>
+    <div class="talk-date">2019</div>
+  </div>
+  <div class="talk">
+    <div class="talk-title">A Micro-Phenomenological Lens for Evaluating Narrative Visualizations <span class="talk-venue">&mdash; BELIV Workshop, Berlin</span></div>
+    <div class="talk-date">2018</div>
+  </div>
+</div>
+
+<!-- AWARDS -->
+<div class="section">
+  <div class="section-title">Awards &amp; Fellowships</div>
+  <div class="award"><div class="award-name">Helmut &amp; Hugo Eppich Family Graduate Scholarship</div><div class="award-right">2022 &middot; $1,200</div></div>
+  <div class="award"><div class="award-name">President's PhD Scholarship</div><div class="award-right">2021 &middot; $7,500</div></div>
+  <div class="award"><div class="award-name">FCAT Graduate Fellowship</div><div class="award-right">2021 &middot; $3,500</div></div>
+  <div class="award"><div class="award-name">Andrew Wade Memorial Scholarship in Visual Analytics</div><div class="award-right">2020 &middot; $7,500</div></div>
+  <div class="award"><div class="award-name">Van Pykstra Graduate Scholarship</div><div class="award-right">2020 &middot; $3,700</div></div>
+  <div class="award"><div class="award-name">Graduate Fellowship</div><div class="award-right">2020 &middot; $6,500</div></div>
+  <div class="award"><div class="award-name">SFU Big Data Graduate Scholarship</div><div class="award-right">2019 &middot; $6,500</div></div>
+  <div class="award"><div class="award-name">Graduate Fellowship</div><div class="award-right">2019 &middot; $3,250</div></div>
+  <div class="award"><div class="award-name">FCAT Graduate Fellowship</div><div class="award-right">2019 &middot; $3,250</div></div>
+  <div class="award"><div class="award-name">Andrew Wade Memorial Scholarship in Visual Analytics</div><div class="award-right">2018 &middot; $6,800</div></div>
+  <div class="award"><div class="award-name">Travel &amp; Minor Research Award (IEEE VIS)</div><div class="award-right">2018 &middot; $1,000</div></div>
+</div>
+
+<!-- TEACHING -->
+<div class="section">
+  <div class="section-title">Teaching</div>
+  <div class="teaching-item"><strong>Andrew Wade Student Workshops &mdash; Instructor</strong> <span class="t-date">2015&ndash;2017</span><br>VIVA, UBC &amp; SFU. Developed and delivered 12-week introductory visual analytics course.</div>
+  <div class="teaching-item"><strong>Visual Analytics Half-Day Course &mdash; Instructor</strong> <span class="t-date">2017</span><br>Developed and delivered introduction to visual analytics for engineering students.</div>
+  <div class="teaching-item"><strong>Visual Analytics Courses &mdash; Teaching Assistant</strong> <span class="t-date">2018&ndash;2019</span><br>Multiple courses for corporate clients, BC Government, climate researchers, and SFU SIAT. Instructor: Lyn Bartram.</div>
+  <div class="teaching-item"><strong>Management Information Systems &mdash; Teaching Assistant</strong> <span class="t-date">2016</span><br>UBC Sauder School of Business. Instructor: Alym Amlani.</div>
+  <div class="teaching-item"><strong>Analytics and Interpretation for Applied Sciences &mdash; Teaching Assistant</strong> <span class="t-date">2016&ndash;2017</span><br>Developed and delivered lab component. Instructor: Iain Begg.</div>
+  <div class="teaching-item"><strong>SFU Continuing Studies Visual Analytics Certificate</strong> <span class="t-date">2016</span><br>Aided the development of two continuing studies courses on visual analytics.</div>
+</div>
+
+</body>
+</html>

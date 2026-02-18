@@ -1,69 +1,177 @@
-<!-- src/routes/index.svelte -->
 <script>
-    let headshot = "/Portrait.jpeg";
-    const pdfUrl = '/StanNowakCV.pdf';
-  </script>
-  
-  <style>
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 30px;
-    }
-  
-    .headshot-container {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-    }
-  
-    .headshot {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-    }
-  
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-  
-    h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin: 40px 0 20px;
-    }
-  
-    p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-    }
-  
-    a {
-      color: var(--link-hover-color);
-      text-decoration: none;
-    }
-  
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-  
-  <div class="container">
-    <div class="headshot-container">
-      <img src="{headshot}" alt="Your Name" class="headshot" />
+  const pdfUrl = '/StanNowakCV.pdf';
+  let headshot = '/Portrait.jpeg';
+</script>
+
+<svelte:head>
+  <title>Stan Nowak — Cognition + Interactive Data</title>
+  <meta name="description" content="Visualization researcher and designer bridging cognition and interactive data analysis." />
+</svelte:head>
+
+<section class="hero">
+  <div class="intro-row">
+    <div class="intro-text">
+      <h1>Stan Nowak</h1>
+      <p class="tagline">Visualization Researcher &amp; Designer</p>
     </div>
-    <p>
-      I’m a Visualization Designer & Researcher at
-      <a href="https://avalanche.ca/about/avcan-staff">Avalanche Canada</a>. My role involves designing visual analytics and other software systems used for avalanche safety by both professionals and the public. I thrive at the intersection of product design and applied research, creating solutions inspired by and evaluated through real-world challenges.
-    </p>
-    <h2>Research</h2>
-    <p>
-      I am interested in visual analytics for risk assessment in complex systems, particularly emphasizing enhancement of human data interaction, knowledge elcititation, sensemaking, and decision-making in critical, collaborative environments. Currently, I am exploring interactive knowledge management systems to better support collaborative sensemaking.
-    </p>
-    <br>
-    <h3><a href={pdfUrl} >Download my CV</a></h3><small>last updated January 2024</small>
+    <img src={headshot} alt="Stan Nowak" class="headshot" />
   </div>
 
+  <hr />
+
+  <p class="lead">
+    I bridge <strong>cognition</strong> and <strong>interactive data analysis</strong> — designing
+    visual systems that help people reason through complex, ambiguous problems.
+  </p>
+</section>
+
+<section>
+  <h2>Currently</h2>
+  <p>
+    Visualization Designer &amp; Researcher at
+    <a href="https://avalanche.ca/about/avcan-staff">Avalanche Canada</a>, where I design
+    visual analytics and software systems used for avalanche safety by professionals and the
+    public. I work at the intersection of product design and applied research, creating
+    solutions shaped by and evaluated against real-world challenges.
+  </p>
+</section>
+
+<section>
+  <h2>Research Interests</h2>
+  <p>
+    Visual analytics for risk assessment in complex systems — with emphasis on human data
+    interaction, knowledge elicitation, sensemaking, and decision-making in critical,
+    collaborative environments. Currently exploring interactive knowledge management systems
+    to support collaborative sensemaking.
+  </p>
+</section>
+
+<section class="cta-row">
+  <a href="/publications" class="cta">View Publications &rarr;</a>
+  <a href={pdfUrl} class="cta secondary">Download CV</a>
+  <span class="meta">Last updated Feb 2026</span>
+</section>
+
+<style>
+  .hero {
+    margin-bottom: 2.5rem;
+  }
+
+  .intro-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .intro-text {
+    flex: 1;
+  }
+
+  h1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .tagline {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--muted-ink);
+    margin: 0;
+  }
+
+  .headshot {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 1.75rem 0;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--ink);
+  }
+
+  .lead strong {
+    font-weight: 500;
+  }
+
+  section {
+    margin-bottom: 2.25rem;
+  }
+
+  section h2 {
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section p {
+    max-width: 60ch;
+  }
+
+  .cta-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .cta {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    text-decoration: none;
+    padding: 0.5rem 1.1rem;
+    border: 1.5px solid var(--ink);
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .cta:hover {
+    background: var(--ink);
+    color: var(--canvas);
+  }
+
+  .cta.secondary {
+    border-color: var(--line);
+    color: var(--muted-ink);
+  }
+
+  .cta.secondary:hover {
+    border-color: var(--ink);
+    background: var(--ink);
+    color: var(--canvas);
+  }
+
+  .meta {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--muted-ink);
+    opacity: 0.7;
+  }
+
+  @media (max-width: 520px) {
+    .intro-row {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .headshot {
+      width: 80px;
+      height: 80px;
+    }
+  }
+</style>
