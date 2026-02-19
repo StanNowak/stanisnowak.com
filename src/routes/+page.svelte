@@ -5,14 +5,14 @@
 
 <svelte:head>
   <title>Stan Nowak — Cognition + Interactive Data</title>
-  <meta name="description" content="Visualization researcher and designer bridging cognition and interactive data analysis." />
+  <meta name="description" content="Principal Designer & Researcher bridging cognition and interactive data analysis." />
 </svelte:head>
 
 <section class="hero">
   <div class="intro-row">
     <div class="intro-text">
       <h1>Stan Nowak</h1>
-      <p class="tagline">Visualization Researcher &amp; Designer</p>
+      <p class="tagline">Design &middot; Research &middot; Visualization</p>
     </div>
     <img src={headshot} alt="Stan Nowak" class="headshot" />
   </div>
@@ -20,34 +20,38 @@
   <hr />
 
   <p class="lead">
-    I bridge <strong>cognition</strong> and <strong>interactive data analysis</strong> — designing
-    visual systems that help people reason through complex, ambiguous problems.
+    I bridge <strong>human cognition</strong> and <strong>interactive data
+    systems</strong> — helping people reason through complex, ambiguous
+    problems.
   </p>
 </section>
 
 <section>
   <h2>Currently</h2>
   <p>
-    Visualization Designer &amp; Researcher at
-    <a href="https://avalanche.ca/about/avcan-staff">Avalanche Canada</a>, where I design
-    visual analytics and software systems used for avalanche safety by professionals and the
-    public. I work at the intersection of product design and applied research, creating
-    solutions shaped by and evaluated against real-world challenges.
+    Principal Designer &amp; Researcher at
+    <a href="https://avalanche.ca">Avalanche Canada</a> — the lead designer
+    responsible for all digital products. The tools I design and build are
+    used by the public and avalanche professionals across Canada and the
+    United States, including the Colorado Avalanche Information Center and
+    Parks Canada.
+  </p>
+  <p>
+    I design, prototype, code, and conduct research.
   </p>
 </section>
 
 <section>
-  <h2>Research Interests</h2>
+  <h2>Background</h2>
   <p>
-    Visual analytics for risk assessment in complex systems — with emphasis on human data
-    interaction, knowledge elicitation, sensemaking, and decision-making in critical,
-    collaborative environments. Currently exploring interactive knowledge management systems
-    to support collaborative sensemaking.
+    PhD in visual analytics and HCI from Simon Fraser University. BA in
+    Cognitive Systems from UBC. Previously at Autodesk, the Vancouver
+    Institute for Visual Analytics, and independent visualization consulting.
   </p>
 </section>
 
 <section class="cta-row">
-  <a href="/publications" class="cta">View Publications &rarr;</a>
+  <a href="/publications" class="cta">Publications &rarr;</a>
   <a href={pdfUrl} class="cta secondary">Download CV</a>
   <span class="meta">Last updated Feb 2026</span>
 </section>
