@@ -1,6 +1,14 @@
 <script>
   import { page } from '$app/stores';
   import '../app.css';
+  import TopoBackground from '$lib/TopoBackground.svelte';
+
+  let bgMode = 0; // 0: topo lines, 1: dot grid, 2: off
+  const MODE_LABELS = ['◈', '◇', '○'];
+
+  function cycleBg() {
+    bgMode = (bgMode + 1) % 3;
+  }
 </script>
 
 <svelte:head>
@@ -36,9 +44,18 @@
       <span class="mono">&copy; {new Date().getFullYear()}</span>
       <span class="dot">&middot;</span>
       <span>Stan Nowak</span>
+      <button
+        class="easter-egg"
+        class:active={bgMode < 2}
+        on:click={cycleBg}
+        aria-label="Cycle generative background"
+        title="Try clicking around"
+      >{MODE_LABELS[bgMode]}</button>
     </div>
   </footer>
 </div>
+
+<TopoBackground mode={bgMode} />
 
 <style>
   .site {
@@ -128,5 +145,42 @@
 
   .dot {
     opacity: 0.4;
+  }
+
+  .easter-egg {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.15rem;
+    color: var(--muted-ink);
+    padding: 0.35rem;
+    line-height: 1;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    animation: breathe 3.5s ease-in-out infinite;
+  }
+
+  @keyframes breathe {
+    0%, 100% { opacity: 0.45; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.12); }
+  }
+
+  .easter-egg:hover {
+    color: var(--accent);
+    opacity: 1;
+    animation: none;
+    transform: rotate(45deg) scale(1.2);
+    text-shadow: 0 0 6px rgba(178, 34, 34, 0.3);
+  }
+
+  .easter-egg.active {
+    color: var(--accent);
+    opacity: 1;
+    animation: spin-breathe 3.5s ease-in-out infinite;
+  }
+
+  @keyframes spin-breathe {
+    0%, 100% { opacity: 0.65; transform: rotate(0deg) scale(1); }
+    50% { opacity: 1; transform: rotate(180deg) scale(1.15); }
   }
 </style>
