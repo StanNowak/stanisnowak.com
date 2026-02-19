@@ -1,36 +1,47 @@
 import { c as create_ssr_component, b as add_attribute } from "../../chunks/index.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".container.svelte-1e1kxq7{max-width:800px;margin:0 auto;padding:30px}.headshot-container.svelte-1e1kxq7{display:flex;justify-content:center;margin-bottom:30px}.headshot.svelte-1e1kxq7{border-radius:50%;width:200px;height:200px;object-fit:cover}h2.svelte-1e1kxq7{font-size:2rem;font-weight:600;margin:40px 0 20px}p.svelte-1e1kxq7{font-size:1.1rem;line-height:1.5}a.svelte-1e1kxq7{color:var(--link-hover-color);text-decoration:none}a.svelte-1e1kxq7:hover{text-decoration:underline}",
+  code: ".hero.svelte-a2nlzs.svelte-a2nlzs{margin-bottom:2.5rem}.intro-row.svelte-a2nlzs.svelte-a2nlzs{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem}.intro-text.svelte-a2nlzs.svelte-a2nlzs{flex:1}h1.svelte-a2nlzs.svelte-a2nlzs{margin-bottom:0.25rem}.tagline.svelte-a2nlzs.svelte-a2nlzs{font-family:var(--font-display);font-weight:400;font-size:1.05rem;color:var(--muted-ink);margin:0}.headshot.svelte-a2nlzs.svelte-a2nlzs{width:110px;height:110px;border-radius:50%;object-fit:cover;border:1px solid var(--line);flex-shrink:0;margin-top:0.25rem}hr.svelte-a2nlzs.svelte-a2nlzs{border:none;border-top:1px solid var(--line);margin:1.75rem 0}.lead.svelte-a2nlzs.svelte-a2nlzs{font-size:1.1rem;line-height:1.75;color:var(--ink)}.lead.svelte-a2nlzs strong.svelte-a2nlzs{font-weight:500}section.svelte-a2nlzs.svelte-a2nlzs{margin-bottom:2.25rem}section.svelte-a2nlzs h2.svelte-a2nlzs{margin-bottom:0.6rem;padding-bottom:0.35rem;border-bottom:1px solid var(--line)}section.svelte-a2nlzs p.svelte-a2nlzs{max-width:60ch}.cta-row.svelte-a2nlzs.svelte-a2nlzs{display:flex;align-items:baseline;gap:1.25rem;flex-wrap:wrap}.cta.svelte-a2nlzs.svelte-a2nlzs{font-family:var(--font-display);font-weight:600;font-size:0.875rem;letter-spacing:0.01em;color:var(--ink);text-decoration:none;padding:0.5rem 1.1rem;border:1.5px solid var(--ink);transition:background 0.2s ease, color 0.2s ease}.cta.svelte-a2nlzs.svelte-a2nlzs:hover{background:var(--ink);color:var(--canvas)}.cta.secondary.svelte-a2nlzs.svelte-a2nlzs{border-color:var(--line);color:var(--muted-ink)}.cta.secondary.svelte-a2nlzs.svelte-a2nlzs:hover{border-color:var(--ink);background:var(--ink);color:var(--canvas)}.meta.svelte-a2nlzs.svelte-a2nlzs{font-family:var(--font-mono);font-size:0.75rem;color:var(--muted-ink);opacity:0.7}@media(max-width: 520px){.intro-row.svelte-a2nlzs.svelte-a2nlzs{flex-direction:column-reverse;align-items:flex-start;gap:1rem}.headshot.svelte-a2nlzs.svelte-a2nlzs{width:80px;height:80px}}",
   map: null
 };
+const pdfUrl = "/StanNowakCV.pdf";
 let headshot = "/Portrait.jpeg";
-const pdfUrl = "/StanNowakCV2023.pdf";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `
+  return `${$$result.head += `<!-- HEAD_svelte-i92k74_START -->${$$result.title = `<title>Stan Nowak — Cognition + Interactive Data</title>`, ""}<meta name="description" content="Principal Designer & Researcher bridging cognition and interactive data analysis."><!-- HEAD_svelte-i92k74_END -->`, ""}
 
-  
-  
-  
-  <div class="container svelte-1e1kxq7"><div class="headshot-container svelte-1e1kxq7"><img${add_attribute("src", headshot, 0)} alt="Your Name" class="headshot svelte-1e1kxq7"></div>
-    <p class="svelte-1e1kxq7">I’m a PhD candidate at the
-      <a href="https://www.sfu.ca/siat.html" class="svelte-1e1kxq7">School of Interactive Arts and Technology</a>
-      at <a href="https://www.sfu.ca/" class="svelte-1e1kxq7">Simon Fraser University</a> where I also work at the
-      <a href="http://viva.sfu.ca/" class="svelte-1e1kxq7">Vancouver Institute for Visual Analytics</a>. I design and build interactive data interfaces and provide training in visual analytics. My supervisory committee includes
-      <a href="https://www.sfu.ca/~lyn/" class="svelte-1e1kxq7">Lyn Bartram</a>,
-      <a href="https://www.avalancheresearch.ca/pascal-haegeli/" class="svelte-1e1kxq7">Pascal Haegeli</a>, and
-      <a href="https://ws.iat.sfu.ca/" class="svelte-1e1kxq7">Wolfgang Stuerzlinger</a>.
-    </p>
-    <h2 class="svelte-1e1kxq7">Research</h2>
-    <p class="svelte-1e1kxq7">I am interested in problem-driven and applied visualization research. My research focuses on the use of visual analytics in risk assessment in complex systems. I am particularly interested in the use of visual analytics to better support human data interaction (HDI), knowledge elicitation, complex and ambiguous sensemaking, and decision-making in time-constrained collaborative applications. 
-      
-    </p>
-    <h2 class="svelte-1e1kxq7">Consulting</h2>
-    <p class="svelte-1e1kxq7">I am also a visual analytics practitioner and educator, serving clients across a variety of domains such as healthcare, academic research, manufacturing, retail distribution, public art, and public risk communication. I love learning about the unique worlds my clients inahbit, and I&#39;m equally passionate about discovering the ways that interactive visualizations can give them a fresh perspective on the challenges they face.
-    </p>
-    <br>
-    <h3><a${add_attribute("href", pdfUrl, 0)} class="svelte-1e1kxq7">Download my CV</a></h3><small>last updated February 2023</small></div>`;
+<section class="hero svelte-a2nlzs"><div class="intro-row svelte-a2nlzs"><div class="intro-text svelte-a2nlzs"><h1 class="svelte-a2nlzs">Stan Nowak</h1>
+      <p class="tagline svelte-a2nlzs">Design · Research · Visualization</p></div>
+    <img${add_attribute("src", headshot, 0)} alt="Stan Nowak" class="headshot svelte-a2nlzs"></div>
+
+  <hr class="svelte-a2nlzs">
+
+  <p class="lead svelte-a2nlzs">I bridge <strong class="svelte-a2nlzs">human cognition</strong> and <strong class="svelte-a2nlzs">interactive data
+    systems</strong> — helping people reason through complex, ambiguous
+    problems.
+  </p></section>
+
+<section class="svelte-a2nlzs"><h2 class="svelte-a2nlzs">Currently</h2>
+  <p class="svelte-a2nlzs">Principal Designer &amp; Researcher at
+    <a href="https://avalanche.ca">Avalanche Canada</a> — the lead designer
+    responsible for all digital products. The tools I design and build are
+    used by the public and avalanche professionals across Canada and the
+    United States, including the Colorado Avalanche Information Center and
+    Parks Canada.
+  </p>
+  <p class="svelte-a2nlzs">I design, prototype, code, and conduct research.
+  </p></section>
+
+<section class="svelte-a2nlzs"><h2 class="svelte-a2nlzs">Background</h2>
+  <p class="svelte-a2nlzs">PhD in visual analytics and HCI from Simon Fraser University. BA in
+    Cognitive Systems from UBC. Previously at Autodesk, the Vancouver
+    Institute for Visual Analytics, and independent visualization consulting.
+  </p></section>
+
+<section class="cta-row svelte-a2nlzs"><a href="/publications" class="cta svelte-a2nlzs">Publications →</a>
+  <a${add_attribute("href", pdfUrl, 0)} class="cta secondary svelte-a2nlzs">Download CV</a>
+  <span class="meta svelte-a2nlzs">Last updated Feb 2026</span>
+</section>`;
 });
 export {
   Page as default

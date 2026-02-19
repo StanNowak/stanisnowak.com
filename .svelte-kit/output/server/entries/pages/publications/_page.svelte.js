@@ -1,18 +1,113 @@
-import { c as create_ssr_component, e as each, b as add_attribute, d as escape } from "../../../chunks/index.js";
+import { c as create_ssr_component, e as escape, f as each, b as add_attribute } from "../../../chunks/index.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".page-container.svelte-1801w1s.svelte-1801w1s{max-width:900px;margin:0 auto;padding:30px}.publication-card.svelte-1801w1s.svelte-1801w1s{display:flex;align-items:center;margin:10px;padding:10px;border-radius:5px;box-shadow:0px 0px 5px rgba(0, 0, 0, 0.2);background-color:rgba(255, 255, 255, 0.1);text-align:left}.publication-card.svelte-1801w1s.svelte-1801w1s:hover{box-shadow:0px 0px 5px rgba(0, 0, 0, 0.4)}.publication-thumbnail.svelte-1801w1s.svelte-1801w1s{width:100px;height:100px;object-fit:cover;border-radius:5px;margin-right:10px}.publication-details.svelte-1801w1s.svelte-1801w1s{display:flex;flex-direction:column;justify-content:center}.publication-title.svelte-1801w1s.svelte-1801w1s{font-size:1.2rem;font-weight:bold;margin:0;margin-bottom:5px;color:var(--text-color);text-decoration:none}.publication-title.svelte-1801w1s.svelte-1801w1s:hover{color:var(--link-hover-color);text-decoration:underline}.publication-authors.svelte-1801w1s.svelte-1801w1s{font-size:0.8rem;font-style:italic;margin:0;margin-bottom:5px;color:var(--text-color)}.publication-venue.svelte-1801w1s.svelte-1801w1s{font-size:0.8rem;margin:0;margin-bottom:10px;color:var(--text-color)}.publication-video.svelte-1801w1s.svelte-1801w1s{font-size:0.8rem;margin:0;margin-bottom:10px}.publication-video.svelte-1801w1s a.svelte-1801w1s{color:var(--link-hover-color);text-decoration:none}.publication-video.svelte-1801w1s a.svelte-1801w1s:hover{text-decoration:underline}",
+  code: ".page-header.svelte-1x7enqw.svelte-1x7enqw{margin-bottom:2.5rem;padding-bottom:1rem;border-bottom:1px solid var(--line)}.page-header.svelte-1x7enqw h1.svelte-1x7enqw{margin-bottom:0.3rem}.pub-count.svelte-1x7enqw.svelte-1x7enqw{font-family:var(--font-mono);font-size:0.8rem;color:var(--muted-ink);opacity:0.7}.pub.svelte-1x7enqw.svelte-1x7enqw{display:flex;gap:1.25rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}.pub.svelte-1x7enqw.svelte-1x7enqw:last-child{border-bottom:none}.thumb-link.svelte-1x7enqw.svelte-1x7enqw{flex-shrink:0;display:block;line-height:0;align-self:flex-start}.thumb.svelte-1x7enqw.svelte-1x7enqw{width:100px;height:100px;object-fit:cover;border:1px solid var(--line);border-radius:2px;transition:border-color 0.2s ease}.thumb-link.svelte-1x7enqw:hover .thumb.svelte-1x7enqw{border-color:var(--accent)}.pub-body.svelte-1x7enqw.svelte-1x7enqw{min-width:0;flex:1}.pub-title.svelte-1x7enqw.svelte-1x7enqw{font-family:var(--font-display);font-weight:500;font-size:1.05rem;letter-spacing:var(--tracking-tight);color:var(--ink);text-decoration:none;line-height:1.35;display:block;margin-bottom:0.3rem}.pub-title.svelte-1x7enqw.svelte-1x7enqw:hover{color:var(--accent)}.authors.svelte-1x7enqw.svelte-1x7enqw{font-size:0.85rem;line-height:1.5;margin-bottom:0.15rem}.authors.svelte-1x7enqw strong{font-weight:500;color:var(--ink)}.venue.svelte-1x7enqw.svelte-1x7enqw{font-size:0.8rem;font-style:italic;color:var(--muted-ink);margin-bottom:0.3rem}.pub-meta.svelte-1x7enqw.svelte-1x7enqw{display:flex;align-items:center;gap:0.5rem}.sep.svelte-1x7enqw.svelte-1x7enqw{color:var(--muted-ink);opacity:0.3}.mono.svelte-1x7enqw.svelte-1x7enqw{font-family:var(--font-mono);font-size:0.75rem;color:var(--muted-ink)}.type-badge.svelte-1x7enqw.svelte-1x7enqw{font-family:var(--font-display);font-weight:600;font-size:0.6rem;letter-spacing:0.04em;text-transform:uppercase;color:var(--accent)}.video-link.svelte-1x7enqw.svelte-1x7enqw{font-family:var(--font-mono);font-size:0.75rem;color:var(--accent);text-decoration:none;margin-top:0.35rem;display:inline-block}.video-link.svelte-1x7enqw.svelte-1x7enqw:hover{text-decoration:underline}@media(max-width: 520px){.pub.svelte-1x7enqw.svelte-1x7enqw{flex-direction:column;gap:0.75rem}.thumb.svelte-1x7enqw.svelte-1x7enqw{width:100%;height:auto;max-height:180px}}",
   map: null
 };
+function highlightName(authors) {
+  return authors.map((a) => a === "Stan Nowak" ? `<strong>${a}</strong>` : a).join(", ");
+}
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const publications = [
     {
-      id: 1,
-      title: "I’m Not Sure: Designing for Ambiguity in Visual Analytics",
+      id: 13,
+      title: "The AvID Project: Collaborative Solutions to Avalanche Forecasting Challenges",
+      authors: [
+        "Grant Helgeson",
+        "Stan Nowak",
+        "Mike Cooperstein",
+        "Simon Horton",
+        "Jacob Barney",
+        "Brian Lazar",
+        "Ethan Greene",
+        "Karl Klassen"
+      ],
+      venue: "International Snow Science Workshop Proceedings",
+      date: "2023",
+      type: "Conference",
+      link: "https://arc.lib.montana.edu/snow-science/objects/ISSW2023_O1.02.pdf",
+      thumbnail: "/Thumbnails/ISSW23avid.png",
+      video: null
+    },
+    {
+      id: 12,
+      title: "Is it a problem? Takeaways from research into the use and effectiveness of avalanche problems",
+      authors: [
+        "Simon Horton",
+        "Pascal Haegeli",
+        "Grant Statham",
+        "Bret Shandro",
+        "Taylor Clark",
+        "Stan Nowak",
+        "Moses Towell",
+        "Heather Hordowick",
+        "Florian Herla"
+      ],
+      venue: "International Snow Science Workshop Proceedings",
+      date: "2023",
+      type: "Conference",
+      link: "https://avalancheresearch.ca/wp-content/uploads/2023/09/2023_HortonOthers_AvalancheProblems.pdf",
+      thumbnail: "/Thumbnails/ISSW23problem.png",
+      video: null
+    },
+    {
+      id: 11,
+      title: "Designing digital tools to support handoff at shift changes in avalanche forecasting",
+      authors: ["Stan Nowak", "Pascal Haegeli", "Lyn Bartram"],
+      venue: "International Snow Science Workshop Proceedings",
+      date: "2023",
+      type: "Conference",
+      link: "https://avalancheresearch.ca/wp-content/uploads/2023/09/2023_NowakOthers_HandOff.pdf",
+      thumbnail: "/Thumbnails/ISSW23handoff.png",
+      video: null
+    },
+    {
+      id: 10,
+      title: "Designing for ambiguity in sensemaking: Visual analytics in risk analysis and prediction",
+      authors: ["Stan Nowak"],
+      venue: "Ph.D. thesis, Simon Fraser University",
+      date: "2023",
+      type: "Thesis",
+      link: "https://summit.sfu.ca/_flysystem/fedora/2023-11/etd22736.pdf",
+      thumbnail: "/Thumbnails/Thesis23.png",
+      video: null
+    },
+    {
+      id: 9,
+      title: "Identifying Visualization Opportunities to Help Architects Manage the Complexity of Building Codes",
+      authors: [
+        "Stan Nowak",
+        "Bon Adriel Aseniero",
+        "Lyn Bartram",
+        "Tovi Grossman",
+        "George Fitzmaurice",
+        "Justin Matejka"
+      ],
+      venue: "IEEE Computer Graphics & Applications",
+      date: "2023",
+      type: "Journal",
+      link: "https://www.research.autodesk.com/app/uploads/2023/10/Identifying_Visualization_Opportunities_to_Help_Architects_Manage_the_Complexity_of_Building_Codes.pdf",
+      thumbnail: "/Thumbnails/CGA23.png",
+      video: "https://www.youtube.com/watch?v=c8Oi5j19Xok"
+    },
+    {
+      id: 8,
+      title: "Designing for Ambiguity in Visual Analytics: Lessons from Risk Assessment and Prediction",
       authors: ["Stan Nowak", "Lyn Bartram"],
-      venue: "Graphics Interface 2022",
+      venue: "IEEE Transactions on Visualization and Computer Graphics",
+      date: "2023",
+      type: "Journal",
+      link: "https://osf.io/y35u4/",
+      thumbnail: "/Thumbnails/Viz23.png",
+      video: "https://www.youtube.com/watch?v=SBB4WR305xk&ab_channel=IEEEVisualizationConference"
+    },
+    {
+      id: 1,
+      title: "I'm Not Sure: Designing for Ambiguity in Visual Analytics",
+      authors: ["Stan Nowak", "Lyn Bartram"],
+      venue: "Graphics Interface",
       date: "2022",
-      type: "Archival Conference Proceedings (refereed)",
+      type: "Conference",
       link: "https://openreview.net/pdf?id=SHQU_yejZFv",
       thumbnail: "/Thumbnails/GI22.png",
       video: null
@@ -20,17 +115,19 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {
       id: 7,
       title: "Give Me the Data: Visual Analytics Needs to Go Beyond Visualization",
-      thumbnail: "/Thumbnails/ASCR.png",
       authors: ["Stan Nowak", "Lyn Bartram"],
-      venue: "ASCR Workshop on Visualization for Scientific Discovery, Decision-Making, & Communication 2022",
+      venue: "ASCR Workshop on Visualization for Scientific Discovery, Decision-Making, & Communication",
+      date: "2022",
+      type: "Conference",
       link: "https://custom.cvent.com/DCBD4ADAAD004096B1E4AD96F3C8049E/files/event/fc8f3c090e35418982b417f2d3e4e73e/5e4a011ffb0044bd8afb37ff00124c74.pdf",
+      thumbnail: "/Thumbnails/ASCR.png",
       video: null
     },
     {
-      id: 5,
+      id: 6,
       title: "Visual Analytics: A Method to Explore Natural Histories of Oral Epithelial Dysplasia",
       authors: ["Stan Nowak", "Miriam Rosing", "Wolfgang Stuerzlinger", "Lyn Bartram"],
-      venue: "Frontiers in Oral Health 2021",
+      venue: "Frontiers in Oral Health",
       date: "2021",
       type: "Journal",
       link: "https://www.frontiersin.org/articles/10.3389/froh.2021.703874/full",
@@ -38,21 +135,21 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       video: null
     },
     {
-      id: 2,
+      id: 5,
       title: "Designing for Ambiguity: Visual Analytics in Avalanche Forecasting",
       authors: ["Stan Nowak", "Lyn Bartram", "Pascal Haegeli"],
-      venue: "IEEE Visualization Conference 2020",
+      venue: "IEEE Visualization Conference",
       date: "2020",
-      type: "Archival Conference Proceedings (refereed)",
+      type: "Conference",
       link: "https://arxiv.org/abs/2009.02800",
       thumbnail: "/Thumbnails/VizShort20.png",
       video: null
     },
     {
-      id: 6,
+      id: 4,
       title: "Enhancing the operational value of snowpack models with visualization design principles",
       authors: ["Simon Horton", "Stan Nowak", "Pascal Haegeli"],
-      venue: "Natural Hazards and Earth System Sciences 2019",
+      venue: "Natural Hazards and Earth System Sciences",
       date: "2019",
       type: "Journal",
       link: "https://nhess.copernicus.org/articles/20/1557/2020/",
@@ -63,38 +160,43 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       id: 3,
       title: "A Micro-Phenomenological Lens for Evaluating Narrative Visualization",
       authors: ["Stan Nowak", "Lyn Bartram", "Thecla Schiphorst"],
-      venue: "IEEE Evaluation and Beyond-Methodological Approaches for Visualization 2018",
+      venue: "IEEE Evaluation and Beyond — Methodological Approaches for Visualization",
       date: "2018",
-      type: "Archival Conference Proceedings (refereed)",
+      type: "Conference",
       link: "https://osf.io/ws7j9/",
       thumbnail: "/Thumbnails/BELIV18.png",
       video: null
     },
     {
-      id: 4,
+      id: 2,
       title: "Exploring regional snowpack patterns with gridded models",
       authors: ["Simon Horton", "Stan Nowak", "Pascal Haegeli"],
-      venue: "International Snow Science Workshop Proceedings 2018",
+      venue: "International Snow Science Workshop Proceedings",
       date: "2018",
-      type: "Archival Conference Proceedings (refereed)",
+      type: "Conference",
       link: "http://www.avalancheresearch.ca/wp-content/uploads/2018/08/2018_ISSW_Horton_SnowpackPatterns.pdf",
       thumbnail: "/Thumbnails/ISSW18.png",
       video: null
     }
   ];
   $$result.css.add(css);
-  return `<div class="page-container svelte-1801w1s"><h1>Publications</h1>
+  return `${$$result.head += `<!-- HEAD_svelte-q3pmp7_START -->${$$result.title = `<title>Publications — Stan Nowak</title>`, ""}<!-- HEAD_svelte-q3pmp7_END -->`, ""}
 
-${each(publications, (publication) => {
-    return `<div class="publication-card svelte-1801w1s"><img class="publication-thumbnail svelte-1801w1s"${add_attribute("src", publication.thumbnail, 0)}${add_attribute("alt", publication.title, 0)}>
-		<div class="publication-details svelte-1801w1s"><a class="publication-title svelte-1801w1s"${add_attribute("href", publication.link, 0)} target="_blank">${escape(publication.title)}</a>
-			<div class="publication-authors svelte-1801w1s">${escape(publication.authors.join(", "))}</div>
-			<div class="publication-venue svelte-1801w1s">${escape(publication.venue)}</div>
-			${publication.video ? `<div class="publication-video svelte-1801w1s">Video: <a${add_attribute("href", publication.video, 0)} target="_blank" class="svelte-1801w1s">${escape(publication.video)}</a>
-				</div>` : ``}</div>
-	</div>`;
-  })}
-</div>`;
+<header class="page-header svelte-1x7enqw"><h1 class="svelte-1x7enqw">Publications</h1>
+	<p class="pub-count svelte-1x7enqw">${escape(publications.length)} entries · 2018–2023</p></header>
+
+${each(publications, (pub) => {
+    return `<article class="pub svelte-1x7enqw">${pub.thumbnail ? `<a${add_attribute("href", pub.link, 0)} target="_blank" rel="noopener" class="thumb-link svelte-1x7enqw"><img${add_attribute("src", pub.thumbnail, 0)}${add_attribute("alt", pub.title, 0)} class="thumb svelte-1x7enqw">
+			</a>` : ``}
+		<div class="pub-body svelte-1x7enqw"><a${add_attribute("href", pub.link, 0)} target="_blank" rel="noopener" class="pub-title svelte-1x7enqw">${escape(pub.title)}</a>
+			<p class="authors svelte-1x7enqw"><!-- HTML_TAG_START -->${highlightName(pub.authors)}<!-- HTML_TAG_END --></p>
+			<p class="venue svelte-1x7enqw">${escape(pub.venue)}</p>
+			<p class="pub-meta svelte-1x7enqw"><span class="mono svelte-1x7enqw">${escape(pub.date)}</span>
+				<span class="sep svelte-1x7enqw">·</span>
+				<span class="type-badge svelte-1x7enqw">${escape(pub.type)}</span></p>
+			${pub.video ? `<a${add_attribute("href", pub.video, 0)} target="_blank" rel="noopener" class="video-link svelte-1x7enqw">Watch video →</a>` : ``}</div>
+	</article>`;
+  })}`;
 });
 export {
   Page as default
