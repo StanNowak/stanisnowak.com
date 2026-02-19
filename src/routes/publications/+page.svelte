@@ -313,14 +313,16 @@
 
 	@media (max-width: 520px) {
 		.pub {
-			flex-direction: column;
-			gap: 0.75rem;
+			gap: 1rem;
 		}
 
 		.thumb {
-			width: 100%;
-			height: auto;
-			max-height: 180px;
+			width: 64px;
+			height: 64px;
+		}
+
+		.pub-title {
+			font-size: 0.95rem;
 		}
 	}
 </style>

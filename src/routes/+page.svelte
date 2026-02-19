@@ -37,7 +37,7 @@
     Parks Canada.
   </p>
   <p>
-    I design, prototype, code, and conduct research.
+    I design, prototype, and ship products — and research how people use them.
   </p>
 </section>
 
