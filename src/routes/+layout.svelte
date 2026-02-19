@@ -4,7 +4,11 @@
   import TopoBackground from '$lib/TopoBackground.svelte';
 
   let bgMode = 0; // 0: topo lines, 1: dot grid, 2: off
-  const MODE_LABELS = ['◈', '◇', '○'];
+  const MODE_ICONS = ['◈', '◇', '○'];
+  const MODE_NAMES = ['terrain', 'dots', 'off'];
+
+  $: isLanding = $page.url.pathname === '/';
+  $: effectiveMode = isLanding ? bgMode : 2;
 
   function cycleBg() {
     bgMode = (bgMode + 1) % 3;
@@ -44,18 +48,23 @@
       <span class="mono">&copy; {new Date().getFullYear()}</span>
       <span class="dot">&middot;</span>
       <span>Stan Nowak</span>
-      <button
-        class="easter-egg"
-        class:active={bgMode < 2}
-        on:click={cycleBg}
-        aria-label="Cycle generative background"
-        title="Try clicking around"
-      >{MODE_LABELS[bgMode]}</button>
+      {#if isLanding}
+        <button
+          class="easter-egg"
+          class:active={bgMode < 2}
+          on:click={cycleBg}
+          aria-label="Cycle generative background"
+          title="Click anywhere on the page too"
+        >
+          <span class="ee-icon">{MODE_ICONS[bgMode]}</span>
+          <span class="ee-label">{MODE_NAMES[bgMode]}</span>
+        </button>
+      {/if}
     </div>
   </footer>
 </div>
 
-<TopoBackground mode={bgMode} />
+<TopoBackground mode={effectiveMode} />
 
 <style>
   .site {
@@ -150,37 +159,50 @@
   .easter-egg {
     margin-left: auto;
     background: none;
-    border: none;
+    border: 1px solid var(--line);
+    border-radius: 100px;
     cursor: pointer;
-    font-size: 1.15rem;
-    color: var(--muted-ink);
-    padding: 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.65rem 0.3rem 0.5rem;
     line-height: 1;
-    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
-    animation: breathe 3.5s ease-in-out infinite;
+    color: var(--muted-ink);
+    font-family: var(--font-mono);
+    transition: all 0.3s ease;
+    animation: nudge 4s ease-in-out infinite;
   }
 
-  @keyframes breathe {
-    0%, 100% { opacity: 0.45; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(1.12); }
+  .ee-icon {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+  }
+
+  .ee-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  @keyframes nudge {
+    0%, 100% { opacity: 0.5; border-color: var(--line); }
+    50% { opacity: 0.85; border-color: var(--muted-ink); }
   }
 
   .easter-egg:hover {
-    color: var(--accent);
-    opacity: 1;
     animation: none;
-    transform: rotate(45deg) scale(1.2);
-    text-shadow: 0 0 6px rgba(178, 34, 34, 0.3);
+    opacity: 1;
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(178, 34, 34, 0.04);
+  }
+
+  .easter-egg:hover .ee-icon {
+    transform: rotate(90deg);
   }
 
   .easter-egg.active {
     color: var(--accent);
-    opacity: 1;
-    animation: spin-breathe 3.5s ease-in-out infinite;
-  }
-
-  @keyframes spin-breathe {
-    0%, 100% { opacity: 0.65; transform: rotate(0deg) scale(1); }
-    50% { opacity: 1; transform: rotate(180deg) scale(1.15); }
+    border-color: rgba(178, 34, 34, 0.25);
   }
 </style>
