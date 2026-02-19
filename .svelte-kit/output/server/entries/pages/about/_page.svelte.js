@@ -1,7 +1,6 @@
-import { c as create_ssr_component } from "../../../chunks/index.js";
-const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return ``;
-});
+import "clsx";
+function _page($$renderer) {
+}
 export {
-  Page as default
+  _page as default
 };
